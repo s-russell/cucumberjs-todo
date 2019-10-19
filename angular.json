@@ -52,6 +52,14 @@
                   "maximumError": "5mb"
                 }
               ]
+            },
+            "fake-backend": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.fake-backend.ts"
+                }
+              ]
             }
           }
         },
@@ -116,7 +124,7 @@
           },
           "configurations": {
             "production": {
-              "devServerTarget": "todo:serve:production"
+              "devServerTarget": "todo:serve:fake-backend"
             }
           }
         },
