@@ -8,7 +8,8 @@ import { TestDB } from 'src/test-data/test-db';
 
 export const environment = {
   production: false,
-  httpConnectorImports: [HttpClientModule, InMemoryWebApiModule.forRoot(TestDB)]
+  httpConnectorImports: [HttpClientModule, InMemoryWebApiModule.forRoot(TestDB)],
+  baseUrl: 'http://localhost:4200'
 };
 
 /*

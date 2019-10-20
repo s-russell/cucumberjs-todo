@@ -7,6 +7,7 @@ Feature: Logging In
     - Attempting to view TODOs when not logged in should redirect to login
     - Logging out should redirect to login
 
+    @AdHoc
     Scenario: Logging in successfully
         Given I go to login
         When I log in successfully
